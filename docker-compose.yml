@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  wordpress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+  db:
+    image: mysql:latest
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-password
+      MYSQL_DATABASE: my_wordpress_db
+      MYSQL_QUERY_CACHE_TYPE: 1
+      MYSQL_QUERY_CACHE_SIZE: 64M
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+    driver: bridge
