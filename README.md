@@ -76,7 +76,7 @@ networks:
 
 ## Setup
 
-Make two files `Dockerfile` and `docker-compose.yml`, then run the following command:
+Download both files `Dockerfile` and `docker-compose.yml` in same directory, then run the following command:
 
 ```bash
 docker-compose up -d
