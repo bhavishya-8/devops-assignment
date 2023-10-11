@@ -1,4 +1,4 @@
-    # Dockerizing WordPress and Database Optimization
+#Dockerizing WordPress and Database Optimization
 
 This project involves Dockerizing a WordPress application and optimizing the database for improved performance. Follow these instructions to set up the project.
 
