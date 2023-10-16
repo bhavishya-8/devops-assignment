@@ -9,8 +9,6 @@ This project involves Dockerizing a WordPress application and optimizing the dat
 2. [How to setup](#setup)
 3. [Database Optimization](#database-optimization)
 4. [Additional Notes](#additional-notes)
-5. [Live Wordpress- Hosted on AWS](#Live-wordpress)
-
 
 ## Dockerization
 ### Dockerfile
@@ -138,9 +136,3 @@ Also we can see our secret using following command:
 ```bash
 docker secret ls
 ```
-
-## Live Wordpress
-
-Please check my assignment using the following link:
-
-[Click here](http://13.233.190.208/wp-admin/install.php)
